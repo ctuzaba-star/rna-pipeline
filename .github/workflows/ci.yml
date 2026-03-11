@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install pyspark==3.5.0 pandas pyarrow numpy pytest
+
+      - name: Generate sample data
+        run: python data/generate_sample_data.py
+
+      - name: Run tests
+        run: pytest tests/ -v
+        env:
+          PYTHONPATH: .

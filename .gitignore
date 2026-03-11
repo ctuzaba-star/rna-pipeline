@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+data/raw/
+data/normalized/
+dbt/target/
+dbt/dbt_packages/
+*.egg-info/
+.DS_Store
