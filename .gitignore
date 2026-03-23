@@ -7,3 +7,7 @@ dbt/target/
 dbt/dbt_packages/
 *.egg-info/
 .DS_Store
+jdk-*/
+openjdk.tar.gz
+.pytest_cache/
+.venv/
