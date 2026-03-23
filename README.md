@@ -1,4 +1,4 @@
-# 🧬 RNA-seq Expression Pipeline
+RNA-seq Expression Pipeline
 
 An end-to-end data engineering pipeline for public RNA-seq data from **NCBI GEO** — the world's largest gene expression repository.
 
@@ -57,7 +57,7 @@ rna-pipeline/
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/YOUR_USERNAME/rna-pipeline.git
+git clone https://github.com/ctuzaba-star/rna-pipeline.git
 cd rna-pipeline
 pip install -r requirements.txt
 
